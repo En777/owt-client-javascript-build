@@ -3464,6 +3464,8 @@ function (_EventDispatcher) {
         pcConfiguration.sdpSemantics = 'unified-plan';
       }
 
+      if (!pcConfiguration.iceServers) pcConfiguration.iceServers = []
+
       this._pc = new RTCPeerConnection(pcConfiguration);
 
       this._pc.onicecandidate = function (event) {
@@ -7148,6 +7150,8 @@ function (_EventDispatcher) {
       if (Utils.isChrome()) {
         pcConfiguration.sdpSemantics = 'unified-plan';
       }
+
+      if (!pcConfiguration.iceServers) pcConfiguration.iceServers = []
 
       this._pc = new RTCPeerConnection(pcConfiguration); // Firefox 59 implemented addTransceiver. However, mid in SDP will differ from track's ID in this case. And transceiver's mid is null.
 
