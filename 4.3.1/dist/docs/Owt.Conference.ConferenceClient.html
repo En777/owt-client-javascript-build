@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Intel® Collaboration Suite for WebRTC version 4.3.1 Class: ConferenceClient</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Intel® Collaboration Suite for WebRTC version 4.3.1</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Owt.Base.html">Owt.Base</a></li><li><a href="Owt.Conference.html">Owt.Conference</a></li><li><a href="Owt.P2P.html">Owt.P2P</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Owt.Base.AudioCodec.html">Owt.Base.AudioCodec</a></li><li><a href="Owt.Base.AudioCodecParameters.html">Owt.Base.AudioCodecParameters</a></li><li><a href="Owt.Base.AudioEncodingParameters.html">Owt.Base.AudioEncodingParameters</a></li><li><a href="Owt.Base.AudioPublicationSettings.html">Owt.Base.AudioPublicationSettings</a></li><li><a href="Owt.Base.AudioSourceInfo.html">Owt.Base.AudioSourceInfo</a></li><li><a href="Owt.Base.AudioTrackConstraints.html">Owt.Base.AudioTrackConstraints</a></li><li><a href="Owt.Base.ErrorEvent.html">Owt.Base.ErrorEvent</a></li><li><a href="Owt.Base.EventDispatcher.html">Owt.Base.EventDispatcher</a></li><li><a href="Owt.Base.LocalStream.html">Owt.Base.LocalStream</a></li><li><a href="Owt.Base.MediaStreamFactory.html">Owt.Base.MediaStreamFactory</a></li><li><a href="Owt.Base.MessageEvent.html">Owt.Base.MessageEvent</a></li><li><a href="Owt.Base.MuteEvent.html">Owt.Base.MuteEvent</a></li><li><a href="Owt.Base.OwtEvent.html">Owt.Base.OwtEvent</a></li><li><a href="Owt.Base.Publication.html">Owt.Base.Publication</a></li><li><a href="Owt.Base.PublicationSettings.html">Owt.Base.PublicationSettings</a></li><li><a href="Owt.Base.PublishOptions.html">Owt.Base.PublishOptions</a></li><li><a href="Owt.Base.RemoteStream.html">Owt.Base.RemoteStream</a></li><li><a href="Owt.Base.Resolution.html">Owt.Base.Resolution</a></li><li><a href="Owt.Base.Stream.html">Owt.Base.Stream</a></li><li><a href="Owt.Base.StreamConstraints.html">Owt.Base.StreamConstraints</a></li><li><a href="Owt.Base.StreamEvent.html">Owt.Base.StreamEvent</a></li><li><a href="Owt.Base.StreamSourceInfo.html">Owt.Base.StreamSourceInfo</a></li><li><a href="Owt.Base.TrackKind.html">Owt.Base.TrackKind</a></li><li><a href="Owt.Base.VideoCodec.html">Owt.Base.VideoCodec</a></li><li><a href="Owt.Base.VideoCodecParameters.html">Owt.Base.VideoCodecParameters</a></li><li><a href="Owt.Base.VideoEncodingParameters.html">Owt.Base.VideoEncodingParameters</a></li><li><a href="Owt.Base.VideoPublicationSettings.html">Owt.Base.VideoPublicationSettings</a></li><li><a href="Owt.Base.VideoSourceInfo.html">Owt.Base.VideoSourceInfo</a></li><li><a href="Owt.Base.VideoTrackConstraints.html">Owt.Base.VideoTrackConstraints</a></li><li><a href="Owt.Conference.ActiveAudioInputChangeEvent.html">Owt.Conference.ActiveAudioInputChangeEvent</a></li><li><a href="Owt.Conference.AudioSubscriptionCapabilities.html">Owt.Conference.AudioSubscriptionCapabilities</a></li><li><a href="Owt.Conference.AudioSubscriptionConstraints.html">Owt.Conference.AudioSubscriptionConstraints</a></li><li><a href="Owt.Conference.ConferenceClient.html">Owt.Conference.ConferenceClient</a></li><li><a href="Owt.Conference.ConferenceClientConfiguration.html">Owt.Conference.ConferenceClientConfiguration</a></li><li><a href="Owt.Conference.ConferenceError.html">Owt.Conference.ConferenceError</a></li><li><a href="Owt.Conference.ConferenceInfo.html">Owt.Conference.ConferenceInfo</a></li><li><a href="Owt.Conference.LayoutChangeEvent.html">Owt.Conference.LayoutChangeEvent</a></li><li><a href="Owt.Conference.Participant.html">Owt.Conference.Participant</a></li><li><a href="Owt.Conference.ParticipantEvent.html">Owt.Conference.ParticipantEvent</a></li><li><a href="Owt.Conference.RemoteMixedStream.html">Owt.Conference.RemoteMixedStream</a></li><li><a href="Owt.Conference.SioSignaling.html">Owt.Conference.SioSignaling</a></li><li><a href="Owt.Conference.SubscribeOptions.html">Owt.Conference.SubscribeOptions</a></li><li><a href="Owt.Conference.Subscription.html">Owt.Conference.Subscription</a></li><li><a href="Owt.Conference.SubscriptionCapabilities.html">Owt.Conference.SubscriptionCapabilities</a></li><li><a href="Owt.Conference.SubscriptionUpdateOptions.html">Owt.Conference.SubscriptionUpdateOptions</a></li><li><a href="Owt.Conference.VideoSubscriptionCapabilities.html">Owt.Conference.VideoSubscriptionCapabilities</a></li><li><a href="Owt.Conference.VideoSubscriptionConstraints.html">Owt.Conference.VideoSubscriptionConstraints</a></li><li><a href="Owt.Conference.VideoSubscriptionUpdateOptions.html">Owt.Conference.VideoSubscriptionUpdateOptions</a></li><li><a href="Owt.P2P.P2PClient.html">Owt.P2P.P2PClient</a></li><li><a href="Owt.P2P.P2PClientConfiguration.html">Owt.P2P.P2PClientConfiguration</a></li><li><a href="Owt.P2P.P2PError.html">Owt.P2P.P2PError</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: ConferenceClient</h1>
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Owt.Conference.html">.Conference</a>.</span>
+        
+        ConferenceClient
+        </h2>
+        
+            <div class="class-description"><p>The ConferenceClient handles PeerConnections between client and server. For conference controlling, please refer to REST API guide.<br>
+Events:</p>
+<table>
+<thead>
+<tr>
+<th>Event Name</th>
+<th>Argument Type</th>
+<th>Fired when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>streamadded</td>
+<td>Owt.Base.StreamEvent</td>
+<td>A new stream is available in the conference.</td>
+</tr>
+<tr>
+<td>participantjoined</td>
+<td>Owt.Conference.ParticipantEvent</td>
+<td>A new participant joined the conference.</td>
+</tr>
+<tr>
+<td>messagereceived</td>
+<td>Owt.Base.MessageEvent</td>
+<td>A new message is received.</td>
+</tr>
+<tr>
+<td>serverdisconnected</td>
+<td>Owt.Base.OwtEvent</td>
+<td>Disconnected from conference server.</td>
+</tr>
+</tbody>
+</table></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="ConferenceClient"><span class="type-signature"></span>new ConferenceClient(config, signalingImpl)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Owt.Conference.ConferenceClientConfiguration.html">Owt.Conference.ConferenceClientConfiguration</a></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                    &lt;nullable><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Configuration for ConferenceClient.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>signalingImpl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Owt.Conference.SioSignaling.html">Owt.Conference.SioSignaling</a></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                    &lt;nullable><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Signaling channel implementation for ConferenceClient. SDK uses default signaling channel implementation if this parameter is undefined. Currently, a Socket.IO signaling channel implementation was provided as ics.conference.SioSignaling. However, it is not recommended to directly access signaling channel or customize signaling channel for ConferenceClient as this time.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Owt.Base.EventDispatcher.html">Owt.Base.EventDispatcher</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="addEventListener"><span class="type-signature"></span>addEventListener(eventType, listener)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>This function registers a callback function as a handler for the corresponding event. It's shortened form is on(eventType, listener). See the event description in the following table.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Event string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Callback function.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Owt.Base.EventDispatcher.html#addEventListener">Owt.Base.EventDispatcher#addEventListener</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="clearEventListener"><span class="type-signature"></span>clearEventListener(eventType)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>This function removes all event listeners for one type.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Event string.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Owt.Base.EventDispatcher.html#clearEventListener">Owt.Base.EventDispatcher#clearEventListener</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="join"><span class="type-signature"></span>join(tokenString)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Join a conference.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tokenString</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Token is issued by conference server(nuve).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Return a promise resolved with current conference's information if successfully join the conference. Or return a promise rejected with a newly created Owt.Error if failed to join the conference.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;ConferenceInfo, Error></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="leave"><span class="type-signature"></span>leave()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Leave a conference.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Returned promise will be resolved with undefined once the connection is disconnected.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void, Error></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="publish"><span class="type-signature"></span>publish(stream, options, videoCodecs)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Publish a LocalStream to conference server. Other participants will be able to subscribe this stream when it is successfully published.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>stream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Owt.Base.LocalStream.html">Owt.Base.LocalStream</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The stream to be published.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Owt.Base.PublishOptions.html">Owt.Base.PublishOptions</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Options for publication.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>videoCodecs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Video codec names for publishing. Valid values are 'VP8', 'VP9' and 'H264'. This parameter only valid when options.video is RTCRtpEncodingParameters. Publishing with RTCRtpEncodingParameters is an experimental feature. This parameter is subject to change.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Returned promise will be resolved with a newly created Publication once specific stream is successfully published, or rejected with a newly created Error if stream is invalid or options cannot be satisfied. Successfully published means PeerConnection is established and server is able to process media data.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Publication, Error></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="removeEventListener"><span class="type-signature"></span>removeEventListener(eventType, listener)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>This function removes a registered event listener.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Event string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Callback function.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
+	<dd class="inherited-from">
+		<ul class="dummy">
+			<li>
+				<a href="Owt.Base.EventDispatcher.html#removeEventListener">Owt.Base.EventDispatcher#removeEventListener</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="send"><span class="type-signature"></span>send(message, participantId)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Send a text message to a participant or all participants.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message to be sent.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>participantId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Receiver of this message. Message will be sent to all participants if participantId is undefined.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Returned promise will be resolved when conference server received certain message.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void, Error></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="subscribe"><span class="type-signature"></span>subscribe(stream, options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Subscribe a RemoteStream from conference server.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>stream</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Owt.Base.RemoteStream.html">Owt.Base.RemoteStream</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The stream to be subscribed.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Owt.Conference.SubscribeOptions.html">Owt.Conference.SubscribeOptions</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Options for subscription.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Returned promise will be resolved with a newly created Subscription once specific stream is successfully subscribed, or rejected with a newly created Error if stream is invalid or options cannot be satisfied. Successfully subscribed means PeerConnection is established and server was started to send media data.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Subscription, Error></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+
+<footer>
+
+
+	<span class="copyright">
+	Copyright © 2020 Intel Corporation. All Rights Reserved.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a>
+	
+		on Tue Jan 19th 2021
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+
+</body>
+</html>

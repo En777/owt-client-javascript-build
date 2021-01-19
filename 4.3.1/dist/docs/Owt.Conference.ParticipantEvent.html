@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Intel® Collaboration Suite for WebRTC version 4.3.1 Class: ParticipantEvent</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Intel® Collaboration Suite for WebRTC version 4.3.1</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Owt.Base.html">Owt.Base</a></li><li><a href="Owt.Conference.html">Owt.Conference</a></li><li><a href="Owt.P2P.html">Owt.P2P</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Owt.Base.AudioCodec.html">Owt.Base.AudioCodec</a></li><li><a href="Owt.Base.AudioCodecParameters.html">Owt.Base.AudioCodecParameters</a></li><li><a href="Owt.Base.AudioEncodingParameters.html">Owt.Base.AudioEncodingParameters</a></li><li><a href="Owt.Base.AudioPublicationSettings.html">Owt.Base.AudioPublicationSettings</a></li><li><a href="Owt.Base.AudioSourceInfo.html">Owt.Base.AudioSourceInfo</a></li><li><a href="Owt.Base.AudioTrackConstraints.html">Owt.Base.AudioTrackConstraints</a></li><li><a href="Owt.Base.ErrorEvent.html">Owt.Base.ErrorEvent</a></li><li><a href="Owt.Base.EventDispatcher.html">Owt.Base.EventDispatcher</a></li><li><a href="Owt.Base.LocalStream.html">Owt.Base.LocalStream</a></li><li><a href="Owt.Base.MediaStreamFactory.html">Owt.Base.MediaStreamFactory</a></li><li><a href="Owt.Base.MessageEvent.html">Owt.Base.MessageEvent</a></li><li><a href="Owt.Base.MuteEvent.html">Owt.Base.MuteEvent</a></li><li><a href="Owt.Base.OwtEvent.html">Owt.Base.OwtEvent</a></li><li><a href="Owt.Base.Publication.html">Owt.Base.Publication</a></li><li><a href="Owt.Base.PublicationSettings.html">Owt.Base.PublicationSettings</a></li><li><a href="Owt.Base.PublishOptions.html">Owt.Base.PublishOptions</a></li><li><a href="Owt.Base.RemoteStream.html">Owt.Base.RemoteStream</a></li><li><a href="Owt.Base.Resolution.html">Owt.Base.Resolution</a></li><li><a href="Owt.Base.Stream.html">Owt.Base.Stream</a></li><li><a href="Owt.Base.StreamConstraints.html">Owt.Base.StreamConstraints</a></li><li><a href="Owt.Base.StreamEvent.html">Owt.Base.StreamEvent</a></li><li><a href="Owt.Base.StreamSourceInfo.html">Owt.Base.StreamSourceInfo</a></li><li><a href="Owt.Base.TrackKind.html">Owt.Base.TrackKind</a></li><li><a href="Owt.Base.VideoCodec.html">Owt.Base.VideoCodec</a></li><li><a href="Owt.Base.VideoCodecParameters.html">Owt.Base.VideoCodecParameters</a></li><li><a href="Owt.Base.VideoEncodingParameters.html">Owt.Base.VideoEncodingParameters</a></li><li><a href="Owt.Base.VideoPublicationSettings.html">Owt.Base.VideoPublicationSettings</a></li><li><a href="Owt.Base.VideoSourceInfo.html">Owt.Base.VideoSourceInfo</a></li><li><a href="Owt.Base.VideoTrackConstraints.html">Owt.Base.VideoTrackConstraints</a></li><li><a href="Owt.Conference.ActiveAudioInputChangeEvent.html">Owt.Conference.ActiveAudioInputChangeEvent</a></li><li><a href="Owt.Conference.AudioSubscriptionCapabilities.html">Owt.Conference.AudioSubscriptionCapabilities</a></li><li><a href="Owt.Conference.AudioSubscriptionConstraints.html">Owt.Conference.AudioSubscriptionConstraints</a></li><li><a href="Owt.Conference.ConferenceClient.html">Owt.Conference.ConferenceClient</a></li><li><a href="Owt.Conference.ConferenceClientConfiguration.html">Owt.Conference.ConferenceClientConfiguration</a></li><li><a href="Owt.Conference.ConferenceError.html">Owt.Conference.ConferenceError</a></li><li><a href="Owt.Conference.ConferenceInfo.html">Owt.Conference.ConferenceInfo</a></li><li><a href="Owt.Conference.LayoutChangeEvent.html">Owt.Conference.LayoutChangeEvent</a></li><li><a href="Owt.Conference.Participant.html">Owt.Conference.Participant</a></li><li><a href="Owt.Conference.ParticipantEvent.html">Owt.Conference.ParticipantEvent</a></li><li><a href="Owt.Conference.RemoteMixedStream.html">Owt.Conference.RemoteMixedStream</a></li><li><a href="Owt.Conference.SioSignaling.html">Owt.Conference.SioSignaling</a></li><li><a href="Owt.Conference.SubscribeOptions.html">Owt.Conference.SubscribeOptions</a></li><li><a href="Owt.Conference.Subscription.html">Owt.Conference.Subscription</a></li><li><a href="Owt.Conference.SubscriptionCapabilities.html">Owt.Conference.SubscriptionCapabilities</a></li><li><a href="Owt.Conference.SubscriptionUpdateOptions.html">Owt.Conference.SubscriptionUpdateOptions</a></li><li><a href="Owt.Conference.VideoSubscriptionCapabilities.html">Owt.Conference.VideoSubscriptionCapabilities</a></li><li><a href="Owt.Conference.VideoSubscriptionConstraints.html">Owt.Conference.VideoSubscriptionConstraints</a></li><li><a href="Owt.Conference.VideoSubscriptionUpdateOptions.html">Owt.Conference.VideoSubscriptionUpdateOptions</a></li><li><a href="Owt.P2P.P2PClient.html">Owt.P2P.P2PClient</a></li><li><a href="Owt.P2P.P2PClientConfiguration.html">Owt.P2P.P2PClientConfiguration</a></li><li><a href="Owt.P2P.P2PError.html">Owt.P2P.P2PError</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: ParticipantEvent</h1>
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Owt.Conference.html">.Conference</a>.</span>
+        
+        ParticipantEvent
+        </h2>
+        
+            <div class="class-description"><p>Class ParticipantEvent represents a participant event.</p></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="ParticipantEvent"><span class="type-signature"></span>new ParticipantEvent()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Owt.Base.OwtEvent.html">Owt.Base.OwtEvent</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        <dl>
+            
+<hr>
+<dt class="name" id="participant">
+    <h4 id="participant"><span class="type-signature"></span>participant<span class="type-signature"> :<a href="Owt.Conference.Participant.html">Owt.Conference.Participant</a></span></h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type"><a href="Owt.Conference.Participant.html">Owt.Conference.Participant</a></span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+
+<footer>
+
+
+	<span class="copyright">
+	Copyright © 2020 Intel Corporation. All Rights Reserved.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a>
+	
+		on Tue Jan 19th 2021
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+
+</body>
+</html>
